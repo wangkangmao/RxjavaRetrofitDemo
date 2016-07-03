@@ -72,7 +72,7 @@ public class HttpMethods {
 //                .subscribe(subscriber);
 
         Observable observable = movieService.getTopMovie(start, count)
-                .map(new HttpResultFunc<List<Subject>>());
+                .map(new HttpResultFunc<List<Subject>>());d
 
         toSubscribe(observable, subscriber);
     }
